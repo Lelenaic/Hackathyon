@@ -6,7 +6,7 @@ function mainService() {
     var self = this;
 
     self.data = {
-        hello: 'Hello my friiiiiiiend'
+        hello: 'Hello my'
     };
 
     return self;

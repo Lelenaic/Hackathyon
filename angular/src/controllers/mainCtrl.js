@@ -1,3 +1,7 @@
+/***********************
+ * Controller : mainCtrl
+ ***********************/
+
 function mainCtrl($scope, mainService) {
 
     var self = this;

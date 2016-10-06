@@ -1,7 +1,8 @@
 module.exports = {
     entry: './angular/index.js',
     output: {
-        path: './angular/dist',
-        filename: 'app.js'
+        path: __dirname + '/angular/dist',
+        filename: 'app.js',
+        publicPath: './dist'
     }
 };

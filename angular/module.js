@@ -4,9 +4,9 @@ angular.module('app', []);
 /*********************
  * Services injections
  *********************/
-require('./services/mainService.js');
+require('./src/services/mainService.js');
 
 /************************
  * Controllers injections
  ************************/
-require('./controllers/mainCtrl.js');
+require('./src/controllers/mainCtrl.js');
