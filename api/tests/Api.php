@@ -4,7 +4,7 @@ namespace Hackathyon;
 class Api
 {
     // DO NOT modify the server URL if you want to use the main GoVoiture server.
-    const url = 'http://172.21.4.25/hackathyon/api/public/';
+    const url = 'http://192.168.1.17/hackathyon/api/public/';
     // Your API Key
     protected $apiKey;
     //The action (GET,PUT,DELETE)
