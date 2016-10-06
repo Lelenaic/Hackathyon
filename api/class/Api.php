@@ -9,10 +9,8 @@ class Api
     private $_action;
     private $_category;
     private $_query;
-    private $_array = array();
     const hash = 'bDeUew3JX4Zg96raHzwcQSwDyVAdLesZ';
-    const requestable = ['agency', 'rental', 'model', 'vehicle', 'category'];
-    const alterable = ['id', 'startdate', 'enddate', 'kilometers', 'startagency_id', 'endagency_id', 'category_id'];
+    const requestable = ['consumption', 'heatinglevel', 'installations', 'operatingmode', 'presence'];
 
     /**
      * Api constructor.

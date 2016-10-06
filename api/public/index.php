@@ -4,7 +4,7 @@ require '../vendor/autoload.php';
 
 use RedBeanPHP\R;
 
-R::setup('mysql:host=localhost;dbname=api', 'api', 'api');
+R::setup('mysql:host=149.202.160.19;dbname=hky16_v0', 'data', 'hk16');
 
 $app=new \Slim\Slim([
     'templates.path'=>'../templates'
