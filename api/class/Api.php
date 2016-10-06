@@ -161,7 +161,8 @@ class Api
     }
 
     /**
-     * Used to create or update a rental.
+     * Like the Get function but in post (used for dates wich have slashes)
+     * @return string
      */
     private function post()
     {
