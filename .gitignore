@@ -1,4 +1,5 @@
 .idea
 vendor
-node_modules
-angular/dist
+mobile_app/node_modules
+mobile_app/plugins
+mobile_app/www/dist
