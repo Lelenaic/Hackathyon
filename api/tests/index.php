@@ -4,5 +4,5 @@ require 'Api.php';
 use Hackathyon\Api;
 
 
-$api=new Api('12345','post','agency',['postcode'=>'85000','ville'=>'La Roche-sur-Yon']);
+$api=new Api('12345','post','consumption',['id_produit'=>'io://0801-5372-0988/7730125#1']);
 echo $api->make();
