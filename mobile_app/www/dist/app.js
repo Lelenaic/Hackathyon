@@ -64,9 +64,6 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	//Registering Module 'app'
-	angular.module('app', []);
-
 	/*********************
 	 * Services injections
 	 *********************/

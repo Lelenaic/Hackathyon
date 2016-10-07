@@ -1,1 +1,6 @@
 /* Empty. Add your own CSS if you like */
+
+/* Make tabs fixed to top */
+/*.tabs-top > .tabs, .tabs.tabs-top {*/
+  /*top: 0px!important;*/
+/*}*/

@@ -23,7 +23,9 @@ angular.module('app', ['ionic'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('top');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -32,12 +34,54 @@ angular.module('app', ['ionic'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('home', {
-      url: '/home',
-      controller: "mainCtrl",
-      templateUrl: 'partials/home.html'
-  })
+    .state('tab', {
+      url: '/tab',
+      abstract: true,
+      templateUrl: 'partials/tabs.html'
+    })
+
+    // Each tab has its own nav history stack:
+
+    .state('tab.dash', {
+      url: '/dash',
+      views: {
+        'tab-dash': {
+          templateUrl: 'partials/tab-dash.html',
+          controller: 'DashCtrl'
+        }
+      }
+    })
+
+    .state('tab.chats', {
+      url: '/chats',
+      views: {
+        'tab-chats': {
+          templateUrl: 'partials/tab-chats.html',
+          controller: 'ChatsCtrl'
+        }
+      }
+    })
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'partials/chat-detail.html',
+          controller: 'ChatDetailCtrl'
+        }
+      }
+    })
+
+    .state('tab.account', {
+      url: '/account',
+      views: {
+        'tab-account': {
+          templateUrl: 'partials/tab-account.html',
+          controller: 'AccountCtrl'
+        }
+      }
+    });
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/tab/dash');
 
 });
