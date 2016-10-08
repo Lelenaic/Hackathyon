@@ -111,14 +111,14 @@
                 </li>
                 <li class="ripple">
                     <a class="tree-toggle nav-header">
-                        <span class="fa-area-chart fa"></span> Charts
+                        <span class="fa-area-chart fa"></span> Chart
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="chartjs.html">ChartJs</a></li>
-                        <li><a href="morris.html">Morris</a></li>
-                        <li><a href="flot.html">Flot</a></li>
-                        <li><a href="sparkline.html">SparkLine</a></li>
+                        <li><a href="chartjs">ChartJs</a></li>
+                        <li><a href="morris">Morris</a></li>
+                        <li><a href="flot">Flot</a></li>
+                        <li><a href="sparkline">SparkLine</a></li>
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header">
@@ -142,7 +142,7 @@
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="formelement.html">Form Element</a></li>
-                        <li><a href="#">Wizard</a></li>
+                        <li><a href="">Wizard</a></li>
                         <li><a href="#">File Upload</a></li>
                         <li><a href="#">Text Editor</a></li>
                     </ul>

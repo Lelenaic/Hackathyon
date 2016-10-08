@@ -2,6 +2,8 @@
 
 require '../vendor/autoload.php';
 
+require '../options.php';
+
 use Slim\Slim,
     RedBeanPHP\R;
 

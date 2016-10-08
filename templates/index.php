@@ -1,6 +1,3 @@
-
-
-  		
           <!-- start: content -->
             <div id="content">
                 <div class="panel">
@@ -10,7 +7,7 @@
                         <p class="animated fadeInDown"><span class="fa  fa-map-marker"></span> Batavia,Indonesia</p>
 
                         <ul class="nav navbar-nav">
-                            <li><a href="" >Impedit</a></li>
+                            <li><a href="truc" >Impedit</a></li>
                             <li><a href="" class="active">Virtute</a></li>
                             <li><a href="">Euismod</a></li>
                             <li><a href="">Explicar</a></li>
