@@ -1,6 +1,7 @@
 <?php
 
 require '../vendor/autoload.php';
+require '../options.php';
 
 require '../options.php';
 

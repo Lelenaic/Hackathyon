@@ -38,7 +38,7 @@
                 <span class="middle"></span>
                 <span class="bottom"></span>
             </div>
-            <a href="index.html" class="navbar-brand">
+            <a href="index" class="navbar-brand">
                 <b>MIMIN</b>
             </a>
 
@@ -95,8 +95,8 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                        <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard-v1">Dashboard v.1</a></li>
+                        <li><a href="dashboard-v2">Dashboard v.2</a></li>
                     </ul>
                 </li>
                 <li class="ripple">
@@ -105,8 +105,8 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                     </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                        <li><a href="topnav">Top Navigation</a></li>
+                        <li><a href="boxed">Boxed</a></li>
                     </ul>
                 </li>
                 <li class="ripple">
@@ -124,19 +124,19 @@
                 <li class="ripple"><a class="tree-toggle nav-header">
                         <span class="fa fa-pencil-square"></span> Ui Elements  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="color.html">Color</a></li>
-                        <li><a href="weather.html">Weather</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="icons.html">Icons</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="panels.html">Panels & Tabs</a></li>
-                        <li><a href="notifications.html">Notifications & Tooltip</a></li>
-                        <li><a href="badges.html">Badges & Label</a></li>
-                        <li><a href="progress.html">Progress</a></li>
-                        <li><a href="sliders.html">Sliders</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="modal.html">Modals</a></li>
+                        <li><a href="color">Color</a></li>
+                        <li><a href="weather">Weather</a></li>
+                        <li><a href="typography">Typography</a></li>
+                        <li><a href="icons">Icons</a></li>
+                        <li><a href="buttons">Buttons</a></li>
+                        <li><a href="media">Media</a></li>
+                        <li><a href="panels">Panels & Tabs</a></li>
+                        <li><a href="notifications">Notifications & Tooltip</a></li>
+                        <li><a href="badges">Badges & Label</a></li>
+                        <li><a href="progress">Progress</a></li>
+                        <li><a href="sliders">Sliders</a></li>
+                        <li><a href="timeline">Timeline</a></li>
+                        <li><a href="modal">Modals</a></li>
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
@@ -149,49 +149,49 @@
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="datatables.html">Data Tables</a></li>
-                        <li><a href="handsontable.html">handsontable</a></li>
-                        <li><a href="tablestatic.html">Static</a></li>
+                        <li><a href="datatables">Data Tables</a></li>
+                        <li><a href="handsontable">handsontable</a></li>
+                        <li><a href="tablestatic">Static</a></li>
                     </ul>
                 </li>
-                <li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>Calendar</a></li>
+                <li class="ripple"><a href="calendar"><span class="fa fa-calendar-o"></span>Calendar</a></li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Mail <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="mail-box.html">Inbox</a></li>
-                        <li><a href="compose-mail.html">Compose Mail</a></li>
-                        <li><a href="view-mail.html">View Mail</a></li>
+                        <li><a href="mail-box">Inbox</a></li>
+                        <li><a href="compose-mail">Compose Mail</a></li>
+                        <li><a href="view-mail">View Mail</a></li>
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Pages  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="forgotpass.html">Forgot Password</a></li>
-                        <li><a href="login.html">SignIn</a></li>
-                        <li><a href="reg.html">SignUp</a></li>
-                        <li><a href="article-v1.html">Article v1</a></li>
-                        <li><a href="search-v1.html">Search Result v1</a></li>
-                        <li><a href="productgrid.html">Product Grid</a></li>
-                        <li><a href="profile-v1.html">Profile v1</a></li>
-                        <li><a href="invoice-v1.html">Invoice v1</a></li>
+                        <li><a href="forgotpass">Forgot Password</a></li>
+                        <li><a href="login">SignIn</a></li>
+                        <li><a href="reg">SignUp</a></li>
+                        <li><a href="article-v1">Article v1</a></li>
+                        <li><a href="search-v1">Search Result v1</a></li>
+                        <li><a href="productgrid">Product Grid</a></li>
+                        <li><a href="profile-v1">Profile v1</a></li>
+                        <li><a href="invoice-v1">Invoice v1</a></li>
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
-                        <li><a href="view-mail.html">Level 1</a></li>
-                        <li><a href="view-mail.html">Level 1</a></li>
+                        <li><a href="view-mail">Level 1</a></li>
+                        <li><a href="view-mail">Level 1</a></li>
                         <li class="ripple">
                             <a class="sub-tree-toggle nav-header">
                                 <span class="fa fa-envelope-o"></span> Level 1
                                 <span class="fa-angle-right fa right-arrow text-right"></span>
                             </a>
                             <ul class="nav nav-list sub-tree">
-                                <li><a href="mail-box.html">Level 2</a></li>
-                                <li><a href="compose-mail.html">Level 2</a></li>
-                                <li><a href="view-mail.html">Level 2</a></li>
+                                <li><a href="mail-box">Level 2</a></li>
+                                <li><a href="compose-mail">Level 2</a></li>
+                                <li><a href="view-mail">Level 2</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="credits.html">Credits</a></li>
+                <li><a href="credits">Credits</a></li>
             </ul>
         </div>
     </div>
