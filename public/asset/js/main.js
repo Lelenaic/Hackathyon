@@ -2,7 +2,6 @@
 
     $.fn.ripple = function () {
         $(this).click(function (e) {
-            e.preventDefault();
             var $rippler = $(this);
             $rippler.find(".ink").remove();
 
