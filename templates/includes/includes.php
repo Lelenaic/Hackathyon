@@ -14,7 +14,7 @@ $user=new User($page);
 $user->login();
 $user->logout();
 if (file_exists($page.'.php')){
-    $pages=['login','forgot'];
+    $pages=['login','forgot','500'];
     if (!in_array($page,$pages)){
         include 'includes/header.php';
     }

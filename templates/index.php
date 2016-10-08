@@ -1,7 +1,4 @@
-
-
-  		
-          <!-- start: content -->
+<!-- start: content -->
             <div id="content">
                 <div class="panel">
                   <div class="panel-body">
@@ -1167,7 +1164,7 @@
                 });
 
             };
-        
+
         //  end:  Chart =============
 
         // start: Calendar =========
