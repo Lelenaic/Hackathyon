@@ -21,4 +21,3 @@ $app->post('/(:page)',function ($page='index') use ($app){
 });
 
 $app->run();
-//ss
