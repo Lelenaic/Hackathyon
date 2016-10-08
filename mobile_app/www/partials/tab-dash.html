@@ -1,5 +1,23 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
+    <div class="button-bar bar-positive">
+      <div class="button button-small" data-ng-class="{'btn-selected' : period === 'month'}"
+           data-ng-click="togglePeriod($event, 'month')">Mois dernier
+      </div>
+      <div class="button button-small" data-ng-class="{'btn-selected' : period === 'week'}"
+           data-ng-click="togglePeriod($event, 'week')">Semaine dernière
+      </div>
+      <div class="button button-small" data-ng-class="{'btn-selected' : period === 'yesterday'}"
+           data-ng-click="togglePeriod($event, 'yesterday')">Hier
+      </div>
+    </div>
+    <div data-ng-controller="MonthCtrl" data-ng-if="period === 'month'" data-ng-include="'partials/periods/month.html'">
+    </div>
 
+    <div data-ng-if="period === 'week'" data-ng-include="'partials/periods/week.html'">
+    </div>
+
+    <div data-ng-if="period === 'yesterday'" data-ng-include="'partials/periods/yesterday.html'">
+    </div>
   </ion-content>
 </ion-view>

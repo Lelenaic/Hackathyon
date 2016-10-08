@@ -4,3 +4,8 @@
 /*.tabs-top > .tabs, .tabs.tabs-top {*/
   /*top: 0px!important;*/
 /*}*/
+
+/* selected button */
+.button-bar.bar-positive > .button.btn-selected {
+  background-color: #0c60ee!important;
+}

@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic'])
+angular.module('app', ['ionic', 'chart.js'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -52,12 +52,15 @@ angular.module('app', ['ionic'])
       }
     })
 
+    .state('tab.dash.yesterday', {
+      templateUrl: 'partials/home.html'
+    })
+
     .state('tab.chats', {
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'partials/tab-chats.html',
-          controller: 'ChatsCtrl'
+          templateUrl: 'partials/tab-chats.html'
         }
       }
     })
@@ -65,8 +68,7 @@ angular.module('app', ['ionic'])
       url: '/chats/:chatId',
       views: {
         'tab-chats': {
-          templateUrl: 'partials/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+          templateUrl: 'partials/chat-detail.html'
         }
       }
     })
