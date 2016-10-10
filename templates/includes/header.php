@@ -6,7 +6,7 @@
     <meta name="description" content="Miminium Admin Template v.1">
     <meta name="author" content="Isna Nur Azis">
     <meta name="keyword" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, 3initial-scale=1">
     <title>Miminium</title>
 
     <!-- start: Css -->
@@ -66,7 +66,6 @@
                         <li class="more">
                             <ul>
                                 <li><a href=""><span class="fa fa-cogs"></span></a></li>
-                                <li><a href=""><span class="fa fa-lock"></span></a></li>
                                 <li><a href=""><span class="fa fa-power-off "></span></a></li>
                             </ul>
                         </li>

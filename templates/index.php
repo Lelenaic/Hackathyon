@@ -1,4 +1,7 @@
-          <!-- start: content -->
+<?php
+$dash=new \Hackathyon\Dashboard();
+?>
+<!-- start: content -->
             <div id="content">
                 <div class="panel">
                   <div class="panel-body">
@@ -53,17 +56,17 @@
                                     <div class="panel box-v1">
                                       <div class="panel-heading bg-white border-none">
                                         <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
-                                          <h4 class="text-left">Visit</h4>
+                                          <h4 class="text-left">Vos radiateurs</h4>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-6 text-right">
                                            <h4>
-                                           <span class="icon-user icons icon text-right"></span>
+                                           <span class="fa fa-fire icons icon text-right"></span>
                                            </h4>
                                         </div>
                                       </div>
                                       <div class="panel-body text-center">
-                                        <h1>51181,320</h1>
-                                        <p>User active</p>
+                                        <h1><?= $dash->getRadiatorsNumber(); ?></h1>
+                                        <p>Radiateurs Atlantic</p>
                                         <hr/>
                                       </div>
                                     </div>
