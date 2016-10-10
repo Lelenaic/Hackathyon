@@ -8,7 +8,6 @@ if (!Utility::isLogged() and $page!='login'){
     die;
 }
 
-die(date('d-m-Y'));
 chdir('../templates/');
 //die(password_hash('1234',PASSWORD_DEFAULT));
 
