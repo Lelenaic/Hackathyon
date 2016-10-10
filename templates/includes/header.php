@@ -6,7 +6,7 @@
     <meta name="description" content="Miminium Admin Template v.1">
     <meta name="author" content="Isna Nur Azis">
     <meta name="keyword" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, 3initial-scale=1">
     <title>Miminium</title>
 
     <!-- start: Css -->
@@ -58,7 +58,8 @@
             <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Akihiko Avaron</span></li>
                 <li class="dropdown avatar-dropdown">
-                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
+                    <img src="asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="true"/>
                     <ul class="dropdown-menu user-dropdown">
                         <li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
                         <li><a href="#"><span class="fa fa-calendar"></span> My Calendar</a></li>
@@ -66,13 +67,12 @@
                         <li class="more">
                             <ul>
                                 <li><a href=""><span class="fa fa-cogs"></span></a></li>
-                                <li><a href=""><span class="fa fa-lock"></span></a></li>
                                 <li><a href=""><span class="fa fa-power-off "></span></a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li ><a href="#" class="opener-right-menu"><span class="fa fa-coffee"></span></a></li>
+                <li><a href="#" class="opener-right-menu"><span class="fa fa-coffee"></span></a></li>
             </ul>
         </div>
     </div>
@@ -85,7 +85,9 @@
     <div id="left-menu">
         <div class="sub-left-menu scroll">
             <ul class="nav nav-list">
-                <li><div class="left-bg"></div></li>
+                <li>
+                    <div class="left-bg"></div>
+                </li>
                 <li class="time">
                     <h1 class="animated fadeInLeft">21:00</h1>
                     <p class="animated fadeInRight">Sat,October 1st 2029</p>
@@ -122,7 +124,8 @@
                     </ul>
                 </li>
                 <li class="ripple"><a class="tree-toggle nav-header">
-                        <span class="fa fa-pencil-square"></span> Ui Elements  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                        <span class="fa fa-pencil-square"></span> Ui Elements <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="color">Color</a></li>
                         <li><a href="weather">Weather</a></li>
@@ -139,7 +142,8 @@
                         <li><a href="modal">Modals</a></li>
                     </ul>
                 </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-check-square-o"></span> Forms
+                        <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="formelement.html">Form Element</a></li>
                         <li><a href="">Wizard</a></li>
@@ -147,7 +151,8 @@
                         <li><a href="#">Text Editor</a></li>
                     </ul>
                 </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Tables <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="datatables">Data Tables</a></li>
                         <li><a href="handsontable">handsontable</a></li>
@@ -155,14 +160,16 @@
                     </ul>
                 </li>
                 <li class="ripple"><a href="calendar"><span class="fa fa-calendar-o"></span>Calendar</a></li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Mail <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-envelope-o"></span> Mail <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="mail-box">Inbox</a></li>
                         <li><a href="compose-mail">Compose Mail</a></li>
                         <li><a href="view-mail">View Mail</a></li>
                     </ul>
                 </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Pages  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-file-code-o"></span> Pages <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="forgotpass">Forgot Password</a></li>
                         <li><a href="login">SignIn</a></li>
@@ -174,7 +181,8 @@
                         <li><a href="invoice-v1">Invoice v1</a></li>
                     </ul>
                 </li>
-                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
+                <li class="ripple"><a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel <span
+                            class="fa-angle-right fa right-arrow text-right"></span> </a>
                     <ul class="nav nav-list tree">
                         <li><a href="view-mail">Level 1</a></li>
                         <li><a href="view-mail">Level 1</a></li>
@@ -195,4 +203,5 @@
             </ul>
         </div>
     </div>
-    <!-- end: Left Menu -->
+</div>
+<!-- end: Left Menu -->

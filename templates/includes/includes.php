@@ -7,6 +7,7 @@ if (!Utility::isLogged() and $page!='login'){
     header ('location: login');
     die;
 }
+
 chdir('../templates/');
 //die(password_hash('1234',PASSWORD_DEFAULT));
 

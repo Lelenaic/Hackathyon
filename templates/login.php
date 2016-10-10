@@ -35,9 +35,8 @@
         <form class="form-signin" method="post" action="login">
           <div class="panel periodic-login">
               <div class="panel-body text-center">
-                  <h1 class="atomic-symbol">Mi</h1>
-                  <p class="atomic-mass">14.072110</p>
-                  <p class="element-name">Miminium</p>
+                  <img src="asset/img/logo.png" width="100%" />
+                  <p class="element-name">HeatMe</p>
 
                   <i class="icons icon-arrow-down"></i>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
@@ -50,11 +49,11 @@
                     <span class="bar"></span>
                     <label>Mot de passe</label>
                   </div>
-                  <input type="submit" class="btn col-md-12" value="SignIn"/>
+                  <input type="submit" class="btn col-md-12" value="Se connecter"/>
               </div>
                 <div class="text-center" style="padding:5px;">
-                    <a href="forgotpass.html">Forgot Password </a>
-                    <a href="reg.html">| Signup</a>
+                    <a href="forgotpass">Mot de passe oublié ? </a>
+                    <a href="reg">| Inscription</a>
                 </div>
           </div>
         </form>
