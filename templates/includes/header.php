@@ -64,7 +64,7 @@
                 </li>
                 <li class="time">
                     <h1 class="animated fadeInLeft"><?= date('H:i'); ?></h1>
-                    <p class="animated fadeInRight"><?= date('d/m/Y'); ?></p>
+                    <p class="animated fadeInRight"><?= \Hackathyon\Utility::dateUS2FR(__DATE__); ?></p>
                 </li>
                 <li class="active ripple">
                     <a class="tree-toggle nav-header" href="./"><span class="fa-home fa"></span> Accueil

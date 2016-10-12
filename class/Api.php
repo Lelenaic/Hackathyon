@@ -3,7 +3,7 @@ namespace Hackathyon;
 
 class Api
 {
-    // DO NOT modify the server URL if you want to use the main GoVoiture server.
+    // DO NOT modify the server URL if you want to use the main server.
     const url = 'http://hky.lenaic.me/api/public/';
     // Your API Key
     protected $apiKey;
@@ -46,6 +46,10 @@ class Api
         }
     }
 
+    /**
+     * Like the GET method put using POST
+     * @return string
+     */
     private function post(){
         $curl = curl_init(self::url. $this->apiKey . '/' . $this->action . '/' . $this->category);
         curl_setopt($curl, CURLOPT_POST, true);
@@ -72,6 +76,10 @@ class Api
         return $api;
     }
 
+    /**
+     * Run the API
+     * @return string
+     */
     public function make(){
         if ($this->action=='post'){
             return $this->post();

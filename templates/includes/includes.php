@@ -8,6 +8,7 @@ if (!Utility::isLogged() and $page!='login'){
     die;
 }
 
+
 chdir('../templates/');
 $user=new User($page);
 $user->login();
