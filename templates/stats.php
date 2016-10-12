@@ -1,34 +1,85 @@
 <!-- start:content -->
 <div id="content">
-    <div class="col-md-12 padding-0" style="margin-top:20px;">
-        <div class="col-md-12 padding-0">
-            <div class="col-md-6 padding-0">
-                <div class="col-md-12 padding-0">
-                    <div class="col-md-12">
-                        <div class="panel chart-title">
-                            <h3><span class="fa fa-area-chart"></span>   Chart Js</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="panel">
-                            <div class="panel-heading-white panel-heading">
-                                <h4>Puissance de vos différents appareils (en Watt-heure)</h4>
-                            </div>
-                            <div class="panel-body" style="padding-bottom:50px;">
-                                <canvas class="polar-chart"></canvas>
-                            </div>
-                            <div class="panel-body">
-                                <form method="post" action="">
-                                    <input type="range" value="15" min="0" max="50" step="1">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+
+    <div class="col-md-24">
+        <div class="panel chart-title">
+            <h3><span class="fa fa-area-chart"></span>   Chart Js</h3>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading bg-white border-none">
+                <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
+                    <h4 class="text-left">Puissance de vos radiateurs</h4>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <h4>
+                        <span class="fa fa-bolt text-right"></span>
+                    </h4>
                 </div>
             </div>
+            <div class="panel-body text-center" style="padding-bottom:50px;">
+                <canvas class="polar-chart"></canvas>
+                <h5><?php echo \Hackathyon\Stats::getAdvice1(); ?></h5>
+            </div>
         </div>
-
     </div>
+
+    <div class="col-md-2">
+        <div class="panel">
+            <div class="panel-heading bg-white border-none">
+                <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
+                    <h4 class="text-left">Température actuelle</h4>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <h4>
+                        <?php echo \Hackathyon\Stats::getWeatherLogo(); ?>
+                    </h4>
+                </div>
+            </div>
+            <div class="panel-body text-center">
+                <h1><?php echo \Hackathyon\Stats::getTemp(); ?></h1>
+                <p>En ce moment les températures baissent mais n'augmenter pas trop le chauffage.</p>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="col-md-6">-->
+<!--        <div class="panel">-->
+<!--            <div class="panel-heading bg-white border-none" style="padding:20px;">-->
+<!--                <div class="col-md-6 col-sm-6 col-sm-12 text-left">-->
+<!--                    <h4>Orders</h4>-->
+<!--                </div>-->
+<!--                <div class="col-md-6 col-sm-6 col-sm-12">-->
+<!--                    <div class="mini-onoffswitch pull-right onoffswitch-primary" style="margin-top:10px;">-->
+<!--                        <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox" id="myonoffswitch3" checked>-->
+<!--                        <label class="onoffswitch-label" for="myonoffswitch3"></label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="panel-body" style="padding-bottom:50px;">-->
+<!--                <div id="canvas-holder1">-->
+<!--                    <canvas class="bar-chart"></canvas>-->
+<!--                </div>-->
+<!--                <div class="col-md-12 padding-0" >-->
+<!--                    <div class="col-md-4 col-sm-4 hidden-xs" style="padding-top:20px;">-->
+<!--                        <canvas class="doughnut-chart2"></canvas>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-8 col-sm-8 col-xs-12">-->
+<!--                        <h4>Progress Produksi barang</h4>-->
+<!--                        <p>Sed hendrerit. Curabitur blandit mollis lacus. Duis leo. Sed libero.fusce commodo aliquam arcu..</p>-->
+<!--                        <div class="progress progress-mini">-->
+<!--                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">-->
+<!--                                <span class="sr-only">60% Complete</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
 </div>
 <!-- end: content -->
 
@@ -536,8 +587,8 @@
 
         window.onload = function(){
 
-            var ctx = $(".polar-chart")[0].getContext("2d");
-            window.myPolar = new Chart(ctx).PolarArea(doughnutData, {
+            var ctx6 = $(".polar-chart")[0].getContext("2d");
+            window.myPolar = new Chart(ctx6).PolarArea(doughnutData, {
                 responsive : true,
                 showTooltips: true
             });
