@@ -9,14 +9,15 @@ if (!Utility::isLogged() and $page!='login'){
 }
 
 chdir('../templates/');
-//die(password_hash('1234',PASSWORD_DEFAULT));
-
 $user=new User($page);
 $user->login();
 $user->logout();
 if (file_exists($page.'.php')){
     $pages=['login','forgot','500'];
     if (!in_array($page,$pages)){
+        $w=new \Hackathyon\Weather();
+        $weather=$w->getW();
+        $w->getTemp();
         include 'includes/header.php';
     }
     include $page.'.php';

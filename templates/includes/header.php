@@ -7,7 +7,7 @@
     <meta name="author" content="Isna Nur Azis">
     <meta name="keyword" content="">
     <meta name="viewport" content="width=device-width, 3initial-scale=1">
-    <title>Miminium</title>
+    <title>HeatMe</title>
 
     <!-- start: Css -->
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
@@ -39,7 +39,7 @@
                 <span class="bottom"></span>
             </div>
             <a href="index" class="navbar-brand">
-                <b>MIMIN</b>
+                <b>HeatMe</b>
             </a>
 
             <ul class="nav navbar-nav search-nav">

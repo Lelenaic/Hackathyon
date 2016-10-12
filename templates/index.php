@@ -19,29 +19,12 @@ $dash = new \Hackathyon\Dashboard();
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="col-md-6 col-sm-6 text-right" style="padding-left:10px;">
-                    <h3 style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span> Banyumas</h3>
-                    <h1 style="margin-top: -10px;color: #ddd;">30<sup>o</sup></h1>
+                    <h3 style="color:#DDDDDE;"><span class="fa fa-map-marker"></span> <?= $w->getTown(); ?></h3>
+                    <h1 style="margin-top: -10px;color: #ddd;"><?= $w->getTemp(); ?><sup>o</sup></h1>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="wheather">
-                        <div class="stormy rainy animated pulse infinite">
-                            <div class="shadow">
-
-                            </div>
-                        </div>
-                        <div class="sub-wheather">
-                            <div class="thunder">
-
-                            </div>
-                            <div class="rain">
-                                <div class="droplet droplet1"></div>
-                                <div class="droplet droplet2"></div>
-                                <div class="droplet droplet3"></div>
-                                <div class="droplet droplet4"></div>
-                                <div class="droplet droplet5"></div>
-                                <div class="droplet droplet6"></div>
-                            </div>
-                        </div>
+                        <img src="<?= $w->getPic(); ?>"/>
                     </div>
                 </div>
             </div>
@@ -94,16 +77,25 @@ $dash = new \Hackathyon\Dashboard();
                 <div class="col-md-12">
                     <div class="panel box-v4">
                         <div class="panel-heading bg-white border-none">
-                            <h4><span class="icon-notebook icons"></span> Agenda</h4>
+                            <h4><span class="fa fa-clock-o"></span> Prévisions</h4>
                         </div>
                         <div class="panel-body padding-0">
                             <div class="col-md-12 col-xs-12 col-md-12 padding-0 box-v4-alert">
-                                <h2>Checking Your Server!</h2>
-                                <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                                <b><span class="icon-clock icons"></span> Today at 15:00</b>
-                            </div>
-                            <div class="calendar">
-
+                                <h2>Prévision par météo !</h2>
+                                <p>A partir de la météo nous prévoyons le fonctionnement de vos radiateurs.</p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Heure d'action</th>
+                                        <th>Etat global des radiateurs</th>
+                                        <th>Température prévue</th>
+                                        <th>Météo prévue</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?= $w->showPrevent(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -362,49 +354,10 @@ $dash = new \Hackathyon\Dashboard();
     <div class="tab-content">
         <div id="right-menu-notif" class="tab-panel">
             <ul class="mini-timeline">
-                <li class="mini-timeline-highlight">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">07:00</h5>
-                        <p>Coding!!</p>
-                    </div>
-                </li>
-
-                <li class="mini-timeline-highlight">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">09:00</h5>
-                        <p>Playing The Games</p>
-                    </div>
-                </li>
-                <li class="mini-timeline-highlight">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">12:00</h5>
-                        <p>Meeting with <a href="#">Clients</a></p>
-                    </div>
-                </li>
-                <li class="mini-timeline-highlight mini-timeline-warning">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">15:00</h5>
-                        <p>Breakdown the Personal PC</p>
-                    </div>
-                </li>
-                <li class="mini-timeline-highlight mini-timeline-info">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">15:00</h5>
-                        <p>Checking Server!</p>
-                    </div>
-                </li>
-                <li class="mini-timeline-highlight mini-timeline-success">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">16:01</h5>
-                        <p>Hacking The public wifi</p>
-                    </div>
-                </li>
-                <li class="mini-timeline-highlight mini-timeline-danger">
-                    <div class="mini-timeline-panel">
-                        <h5 class="time">21:00</h5>
-                        <p>Sleep!</p>
-                    </div>
-                </li>
+                <?php
+                //$bar=new \Hackathyon\CofeeBar();
+                //echo $bar->getContent();
+                ?>
                 <li></li>
                 <li></li>
                 <li></li>
