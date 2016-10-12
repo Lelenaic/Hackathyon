@@ -4,6 +4,6 @@ define('__HOST__', '149.202.160.19');
 define('__DB__', 'hky16_v0');
 define('__USER__', 'data');
 define('__PASS__', 'hk16');
-define('__DATE__', date('Y-m-d',strtotime('-10 Months'));
+define('__DATE__', date('Y-m-d',strtotime('-9 Months')));
 
 
