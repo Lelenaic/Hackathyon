@@ -15,6 +15,7 @@ $user->logout();
 if (file_exists($page.'.php')){
     $pages=['login','forgot','500'];
     if (!in_array($page,$pages)){
+        $dash = new \Hackathyon\Dashboard();
         $w=new \Hackathyon\Weather();
         $weather=$w->getW();
         $w->getTemp();

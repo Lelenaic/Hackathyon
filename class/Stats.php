@@ -6,7 +6,7 @@ use RedBeanPHP\R,
 
 class Stats
 {
-    public function roomGraph(){
+    public static function roomGraph(){
         $products = \Hackathyon\Stats::getUserInfo();
         $show = '';
         $color = ['#5BAABF','#4ED18F','#94D7E9','#15BA67','#BBE0E9'];
@@ -23,7 +23,7 @@ class Stats
         return substr($show,0,strlen($show)-1);
     }
 
-    public function getAdvice1(){
+    public static function getAdvice1(){
         $price = 0.15;
         $hours = 15;
         $cost = 0;
@@ -41,27 +41,12 @@ class Stats
 
     public function  getUser(){
 //        return $_SESSION['id'];
-        return 5;
+        return $_SESSION['id'];
     }
 
     public  function getUserInfo(){
         $products=new Api('12345','get','installations',['user_id'=>\Hackathyon\Stats::getUser()]);
         return json_decode($products->make());
-    }
-
-    public function getTemp(){
-        $info = \Hackathyon\Stats::getUserInfo();
-        $url = 'http://api.wunderground.com/api/a19e3f9f3427a3cc/conditions/hourly/q/France/'.$info[0]->city.'.json';
-        $meteo = json_decode(file_get_contents($url));
-//        var_dump($meteo->current_observation);
-        return $meteo->current_observation->temp_c.'°C';
-    }
-
-    public function getWeatherLogo(){
-        $info = \Hackathyon\Stats::getUserInfo();
-        $url = 'http://api.wunderground.com/api/a19e3f9f3427a3cc/conditions/hourly/q/France/'.$info[0]->city.'.json';
-        $meteo = json_decode(file_get_contents($url));
-        return '<img src="'.$meteo->current_observation->icon_url.'" class="icon-basket-loaded icons icon text-right"></img>';
     }
 
     public function getConsumption(){
