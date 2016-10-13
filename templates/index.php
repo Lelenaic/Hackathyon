@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel">
+                    <div class="panel box-v1">
                         <div class="panel-heading bg-white border-none">
                             <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
                                 <h4 class="text-left">Puissance de vos radiateurs</h4>
@@ -78,6 +78,25 @@
                         <div class="panel-body text-center" style="padding-bottom:50px;">
                             <canvas class="polar-chart"></canvas>
                             <h5><?php echo \Hackathyon\Stats::getAdvice1(); ?></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="panel box-v1">
+                        <div class="panel-heading bg-white border-none">
+                            <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
+                                <h4>Evolution de la consommation d'énergie (10 derniers jours)</h4>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                                <h4>
+                                    <span class="fa fa-graph text-right"></span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <canvas class="bar-chart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,10 +180,30 @@
             <?php echo \Hackathyon\Stats::roomGraph(); ?>
         ];
 
+        var barData = {
+            labels: <?php echo \Hackathyon\Stats::getValueList(); ?>,
+            datasets: [
+                {
+                    label: "My First dataset",
+                    fillColor: "rgba(21,186,103,0.5)",
+                    strokeColor: "rgba(220,220,220,0.8)",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: <?php echo \Hackathyon\Stats::getTimeList(); ?>
+                }
+            ]
+        };
+
         window.onload = function(){
 
             var ctx6 = $(".polar-chart")[0].getContext("2d");
             window.myPolar = new Chart(ctx6).PolarArea(doughnutData, {
+                responsive : true,
+                showTooltips: true
+            });
+
+            var ctx4 = $(".bar-chart")[0].getContext("2d");
+            window.myBar = new Chart(ctx4).Bar(barData, {
                 responsive : true,
                 showTooltips: true
             });

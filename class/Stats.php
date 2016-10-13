@@ -50,8 +50,42 @@ class Stats
     }
 
     public function getConsumption(){
-        $product = \Hackathyon\Stats::getUserInfo();
-        var_dump($product);
-        $consumptions = new Api('12345','get','consumption',['user_id'=>\Hackathyon\Stats::getUser(),'product_id'=>$product]);
+        $consumptions = R::getAll('SELECT * FROM `consumption`
+                                    WHERE user_id = '.\Hackathyon\Stats::getUser().'
+                                    AND DATE(timestamp) <= "'.__DATE__.'"
+                                    GROUP BY DATE(timestamp)
+                                    ORDER BY `consumption`.`timestamp` DESC
+                                    LIMIT 10');
+        return $consumptions;
+    }
+
+    public function getTimeList(){
+        $products = \Hackathyon\Stats::getConsumption();
+        $consumptions = [];
+        foreach ($products as $product){
+            $consumptions[] = $product['wh'];
+        }
+        $consumptions = array_reverse($consumptions);
+        $values = '[';
+        foreach ($consumptions as $consumption) {
+            $values .= $consumption.',';
+        }
+        $values = substr($values,0,strlen($values)-1);
+        return $values.']';
+    }
+
+    public function getValueList(){
+        $products = \Hackathyon\Stats::getConsumption();
+        $times = [];
+        foreach ($products as $product){
+            $times[] = $product['timestamp'];
+        }
+        $times = array_reverse($times);
+        $values = '["';
+        foreach ($times as $times) {
+            $values .= $times.'","';
+        }
+        $values = substr($values,0,strlen($values)-2);
+        return $values.']';
     }
 }
